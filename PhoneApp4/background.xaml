@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp4.background"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/bg2.jpg"/>
+        </Grid.Background>
+        <Grid x:Name="Judul" Height="148" VerticalAlignment="Top">
+            <TextBlock x:Name="textBg" Text="Background" FontSize="60" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"  Style="{StaticResource PhoneTextTitle1Style}" Width="343" Margin="127,34,10,34" Foreground="White"/>
+            <Image x:Name="exit" Tap="exit_Tap" Source="/Assets/close.png" VerticalAlignment="Center" HorizontalAlignment="Left" Height="100" Margin="10,0,0,0" Width="100" RenderTransformOrigin="-0.08,-1.56"/>
+        </Grid>
+
+        <!--<StackPanel Grid.Row="0" Margin="10,24,-10,664" Grid.RowSpan="2" >
+            
+        </StackPanel>-->
+
+        <Grid x:Name="ContentPanel" Margin="0,148,0,0">
+            <Image x:Name="gbr" Source="/Assets/plus.png" HorizontalAlignment="Center" Tap="Image_Tap" Height="460" Margin="0,0,0,147" VerticalAlignment="Center" Width="460" Stretch="UniformToFill" />
+            <Image x:Name="next" Source="/Assets/next.png" Tap="next_Tap"  HorizontalAlignment="Center" Height="76" VerticalAlignment="Top" Width="196" Margin="0,504,0,0"/>
+            <Image x:Name="camera" Source="/Assets/camera.png" Tap="camera_Tap" HorizontalAlignment="Center" Height="150" Margin="20,200,240,0" VerticalAlignment="Top" Width="150" Visibility="Collapsed"/>
+            <Image x:Name="galeri" Source="/Assets/gallery.png" Tap="galeri_Tap"  HorizontalAlignment="Center" Height="150" Margin="220,200,0,0" VerticalAlignment="Top" Width="150" Visibility="Collapsed"/>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

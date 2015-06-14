@@ -1,0 +1,14 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="PhoneApp4" EntryPointType="PhoneApp4.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="PhoneApp4" Source="PhoneApp4.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Audio" Source="Coding4Fun.Toolkit.Audio.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Controls" Source="Coding4Fun.Toolkit.Controls.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Net" Source="Coding4Fun.Toolkit.Net.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Storage" Source="Coding4Fun.Toolkit.Storage.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="Nokia.Graphics.Imaging.Managed" Source="Nokia.Graphics.Imaging.Managed.dll" />
+    <AssemblyPart x:Name="Nokia.Graphics.Imaging" Source="Nokia.Graphics.Imaging.dll" />
+    <AssemblyPart x:Name="Nokia.InteropServices.WindowsRuntime" Source="Nokia.InteropServices.WindowsRuntime.dll" />
+  </Deployment.Parts>
+</Deployment>
